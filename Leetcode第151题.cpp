@@ -33,5 +33,14 @@ public:
             }
         }
         return s;
+          
+        
     }
 };
+
+
+
+//python调库比较无赖，就放在这边好了（看不见我，看不见我）
+// class Solution(object):
+//     def reverseWords(self, s):
+//         return " ".join(s.split()[::-1])
