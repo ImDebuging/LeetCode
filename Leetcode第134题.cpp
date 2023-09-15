@@ -1,14 +1,14 @@
 class Solution {
 public:
     int canCompleteCircuit(vector<int>& gas, vector<int>& cost) {
-        int Gas=0,Cost=0;//初始化油量和花费
+        int Gas=0,Cost=0;//初始化油量和消耗
         for(int i=0;i<gas.size();++i)
         {
             Gas+=gas[i];
             Cost+=cost[i];
         }
         if(Gas<Cost){
-            return -1;
+            return -1;    //如果总油量小于总消耗，则汽车一定到不了终点
         }
         vector<int> netcost;
         for(int i=0;i<gas.size();++i)
