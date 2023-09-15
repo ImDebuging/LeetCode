@@ -1,7 +1,7 @@
 class Solution {
 public:
     bool canJump(vector<int>& nums) {
-        if(nums.size()==1){
+        if(nums.size()==1){        //仅有一个数，直接到终点
             return true;
         }
         int cover=0;
